@@ -1,0 +1,39 @@
+<header>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+        $(function(){
+            $('#content-list').slick({
+                autoplay: true,
+                autoplaySpeed: 10000,
+                pauseOnHover: true,
+                arrows: true,
+                draggable: true,
+                dots: true
+            });
+        });
+    </script>
+</header>
+<body>
+    <div class='container'>
+        <h1 id='title'>Carousel</h1>
+        <div class="carousel-wrap">
+            <div class='carousel'>
+                <ul id="content-list">
+                    <li>
+                        <img class='content-img' src='image/20150925_y.jpg'/>
+                    </li>
+                    <li>
+                        <img class='content-img' src='image/20150925_y.jpg'/>
+                    </li>
+                    <li>
+                        <img class='content-img' src='image/20150925_y.jpg'/>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
